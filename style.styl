@@ -81,14 +81,15 @@ section
         position relative
         display flex 
         align-items center
-        background rgb(2,7,3,0.4)
+        background rgba(2,7,3,0.4)
         img 
             position absolute
             width 100%
             height 100%
             object-fit cover
             object-position center
-            
+            z-index -1
+        
 
 
         
@@ -97,3 +98,24 @@ section
     
     
     
+    .swiper-pagination-bullet
+        width   6px !important
+        height 6px !important
+        border-radius 0.2rem !important
+        background var(--bg-color) !important
+        opacity 1 !important
+    .swiper-pagination-bullet-active
+        width 1.5rem !important
+        background var(--main-color) !important
+    .home-text
+        z-index 1000
+        padding 0 150px
+        span
+            color var(--bg-color)
+            font-weight 500
+            text-transform uppercase
+        h1
+            color var(--bg-color)
+            font-size 4rem
+            font-weight 700
+            margin-bottom 1rem
