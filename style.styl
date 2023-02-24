@@ -66,12 +66,12 @@ header
         cursor pointer
         z-index 1000001
         display none
-    .btn
-        padding 0.7rem 1.4rem
-        background var(--main-color)
-        color var(--bg-color)
-        font-weight 400
-        border-radius 0.5rem
+.btn
+    padding 0.7rem 1.4rem
+    background var(--main-color)
+    color var(--bg-color)
+    font-weight 400
+    border-radius 0.5rem
 
 section
     padding 4.5rem 0 1.5rem
@@ -110,3 +110,18 @@ section
             font-size 4rem
             font-weight 700
             margin-bottom 1rem
+        .play
+            position absolute
+            right 4rem
+            bottom 10%
+            .bx
+                background var(--bg-color)
+                padding: 10px
+                font-size 2rem
+                border-radius: 50%
+                border 4px solid rgb(2,3,7,0.4)
+                color var(--main-color)
+                &:hover
+                    background: var(--main-color)
+                    color var(--bg-color)
+                    transition 0.2s all liner
